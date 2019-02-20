@@ -1,0 +1,11 @@
+# DataSource config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/homework?serverTimezone=GMT%2B8
+    username: root
+    password: 1234
+  redis:
+    sentinel:
+      master: mymaster
+      nodes: 47.106.38.101:26379,47.106.38.101:26380
